@@ -17,7 +17,7 @@ Add the middleware in your **settings.py** file.
 > MIDDLEWARE = [
 >    'corsheaders.middleware.CorsMiddleware',
 >    ....
->>    'project.middleware.django_sleep.SleepMiddleware',
+>    **'project.middleware.django_sleep.SleepMiddleware',**
 > ]
 
 Add timing (example 2 seconds) by adding SLEEP_TIME = 2 key in  **settings.py**
