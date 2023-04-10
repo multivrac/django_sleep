@@ -6,14 +6,10 @@ encountered, say, on a cell network).
 
 To use, add this middleware, and add a value for SLEEP_TIME to your settings.
 
-Possible future feature: Look for an X-Django-Sleep header on each request,
-to let the client specify per-request sleep time.
+Tested on django 4.1.7
 """
 
 import time
-
-import django.conf
-import django.core.exceptions
 from django.conf import settings
 from django.utils.deprecation import MiddlewareMixin
 
